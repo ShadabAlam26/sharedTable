@@ -1,0 +1,2 @@
+<button pButton type="button" label="Table2" (click)="handleClick()"></button>
+<app-dynamic-table  [HeadArray]="headArray" [booleanValue]="booleanValue" [dataLength]="totalRecords" [GridArray]="products" (onEdit)="editUser($event)" (paginate)="loadProduct($event)" (sorting)="sortFunction($event)"  (onDelete)="delete($event)"></app-dynamic-table>

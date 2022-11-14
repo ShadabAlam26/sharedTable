@@ -1,0 +1,28 @@
+
+<p-table #dt  stateStorage="session"  
+stateKey="gfg-session" [columns]="HeadArray" [value]="GridArray" dataKey="id" responsiveLayout="scroll"  [paginator]="true" [rows]="5" [showCurrentPageReport]="true"
+currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[5,10,15,20]" [lazy]="true" (onLazyLoad)="paginates($event)"  [totalRecords]="dataLength">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let head of columns" (click)="sortFunction(head.field,booleanValue)">{{head.header}}<p-sortIcon field="{{head.field}}"></p-sortIcon></th>
+            <th *ngIf="isAction"></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-GridArray let-columns="columns">
+        <tr>
+            <td *ngFor ="let head of columns">
+                
+                <div *ngIf="head.field!==''">
+                    {{GridArray[head.field]}}
+                </div>
+                <div *ngIf="head.field ==''">
+                    <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2" (click)="editProduct(GridArray)"></button>
+                    <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteProduct(GridArray)"></button>
+                </div>
+            </td>
+        </tr> 
+
+
+    </ng-template>
+    <p-paginator [rows]="10" [totalRecords]="(GridArray | json).length" [rowsPerPageOptions]="[10,20,30]"></p-paginator>
+</p-table>

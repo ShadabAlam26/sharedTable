@@ -1,0 +1,56 @@
+[
+    {
+        "name":"Shady",
+        "state":"Gujarat",
+        "date":"2022-10-31T06:16:00Z",
+        "amount": 20000
+    },
+    {
+        "name":"Abhin",
+        "state":"UP",
+        "date":"2022-10-30T06:16:00Z",
+        "amount": 80000
+    },
+    {
+        "name":"Prashant",
+        "state":"Bihar",
+        "date":"2022-10-29T06:16:00Z",
+        "amount": 70000
+    },
+    {
+        "name":"Rajnish",
+        "state":"Andhra Pradesh",
+        "date":"2022-10-27T06:16:00Z",
+        "amount": 50000
+    },
+    {
+        "name":"Sushmita",
+        "state":"Tamil Nadu",
+        "date":"2022-10-25T06:16:00Z",
+        "amount": 450000
+    },
+    {
+        "name":"Anjali",
+        "state":"Kerala",
+        "date":"2022-10-20T06:16:00Z",
+        "amount": 90000
+    },
+    {
+        "name":"Quelin",
+        "state":"Karnataka",
+        "date":"2022-10-22T06:16:00Z",
+        "amount": 856700
+    },
+    {
+        "name":"Ankur",
+        "state":"Jharkhand",
+        "date":"2022-10-19T06:16:00Z",
+        "amount": 870000
+    },
+    {
+        "name":"Sabeya",
+        "state":"Rajasthan",
+        "date":"2022-10-19T06:16:00Z",
+        "amount": 9510000
+    }
+]
